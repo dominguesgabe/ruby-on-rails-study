@@ -41,6 +41,18 @@ header {
 		}
 	}
 }
+input[type=submit] {
+	color: #fff;
+	background-color: #7b08ec;
+	padding: 7px 10px;
+	border-radius: 5px;
+	border: none;
+	transition-duration: .15s;
+	&:hover {
+		background-color: #5a09a8;
+	}
+	margin-top: 15px;
+}
 header nav {
 	line-height: $header-height;
 	float: right;
