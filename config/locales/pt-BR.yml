@@ -10,8 +10,10 @@ pt-BR:
             location: "Localização: %{location}"
             bio: "Bio: %{bio}"
     rooms:
-        new:
-            title: Cadastro
+        new: Cadastro
+        edit: Editar
+        show: Ver
+        destroy: Deletar
     links:
         back: Voltar
     layout:
