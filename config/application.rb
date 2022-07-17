@@ -11,12 +11,9 @@ module Colchonet
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
 
-    # Configuration for the application, engines, and railties goes here.
-    #
-    # These settings can be overridden in specific environments using the files
-    # in config/environments, which are processed later.
-    #
-    # config.eager_load_paths << Rails.root.join("extras")
+    I18n.load_path += Dir[Rails.root.join('lib', 'locale', '*.{rb,yml}')]
+    I18n.available_locales = [:"pt-BR", :en]
+    
     config.time_zone = "Brasilia"
     config.i18n.default_locale = :'pt-BR'
   end

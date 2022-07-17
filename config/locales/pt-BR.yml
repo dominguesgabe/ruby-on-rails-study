@@ -14,6 +14,15 @@ pt-BR:
         edit: Editar
         show: Ver
         destroy: Deletar
+    signup_mailer:
+        confirm_email:
+            subject: 'Colcho.net - Confirme seu email'
+            title: 'Seja bem vindo ao Colcho.net!'
+            body: "Seja bem vindo ao Colcho.net, %{full_name}.
+            O Colcho.net é o lugar ideal para você alugar aquele quarto
+            sobrando na sua casa e ainda conhecer gente muito legal do mundo todo"
+            confirm_link_html: 'Para começar a usar o nosso site, acesse: %{link}'
+            thanks_html: 'Obrigado por se cadastrar no %{link}'
     links:
         back: Voltar
     layout:
