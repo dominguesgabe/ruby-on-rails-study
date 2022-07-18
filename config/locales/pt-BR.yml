@@ -1,19 +1,26 @@
 pt-BR:
     users:
         new:
-            title: Cadastro
+            title: 'Cadastro'
         edit:
-            title: Editar perfil
+            title: 'Editar perfil'
         show:
             title: "Perfil: %{user_name}"
             edit: "Editar perfil"
             location: "Localização: %{location}"
             bio: "Bio: %{bio}"
+        user_sessions:
+            new:
+                title: 'Login'
+                sign_up: 'Cadastre-se'
+        #TODO fix next line place
+        confirmations:
+            success: 'Email confirmado com sucesso. Obrigado!'
     rooms:
-        new: Cadastro
-        edit: Editar
-        show: Ver
-        destroy: Deletar
+        new: 'Cadastro'
+        edit: 'Editar'
+        show: 'Ver'
+        destroy: 'Deletar'
     signup_mailer:
         confirm_email:
             subject: 'Colcho.net - Confirme seu email'
@@ -24,23 +31,35 @@ pt-BR:
             confirm_link_html: 'Para começar a usar o nosso site, acesse: %{link}'
             thanks_html: 'Obrigado por se cadastrar no %{link}'
     links:
-        back: Voltar
+        back: "Voltar"
     layout:
-        rooms: Quartos
-        signup: Cadastro
+        rooms: "Quartos"
+        signup: "Cadastro"
     activerecord:
         models:
-            user: Usuário
-            room: Quarto
+            user: "Usuário"
+            room: "Quarto"
         attributes:
             user:
-                full_name: Nome completo
-                location: Localização
-                email: Email
-                password: Senha
-                password_confirmation: Confirme sua senha
-                bio: Biografia
+                full_name: "Nome completo"
+                location: "Localização"
+                email: "Email"
+                password: "Senha"
+                password_confirmation: "Confirme sua senha"
+                bio: "Biografia"
             room:
-                title: Título
-                location: Localização
-                description: Descrição
+                title: "Título"
+                location: "Localização"
+                description: "Descrição"
+    activemodel:
+        attributes:
+            user_session:
+                email: "Email"
+                password: "Senha"
+            errors:
+                messages:
+                    invalid_login: "Usuário ou senha inválidos"
+    helpers:
+        submit:
+            user_session:
+                create: "Entrar"
