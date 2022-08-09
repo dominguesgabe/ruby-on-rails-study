@@ -61,5 +61,9 @@ pt-BR:
                     invalid_login: "Usuário ou senha inválidos"
     helpers:
         submit:
+            submit:
+                create: "Criar %{model}"
+                submit: "Salvar %{model}"
+                update: "Atualizar %{model}"
             user_session:
                 create: "Entrar"
