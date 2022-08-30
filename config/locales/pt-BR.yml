@@ -67,3 +67,6 @@ pt-BR:
                 update: "Atualizar %{model}"
             user_session:
                 create: "Entrar"
+    flash:
+        notice:
+            signed_in: "Você entrou!"
